@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Switch, Route, BrowserRouter } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import App from './containers/App';
 import WashForm from './components/WashForm';
 import Header from './components/Header';
@@ -14,6 +14,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/basic" component={WashForm} />
+        <Route exact path="/about" component={WashForm} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
