@@ -1,16 +1,46 @@
 .navbar {
-  display: flex;
   padding: 25px;
+  display: flex;
 }
 
 .home {
 }
 
-.nav {
+.push {
+  margin-left: auto;
 }
 
 a {
   text-decoration: none;
+  position: relative;
   font-size: 27px;
   padding: 0px 10px 0px 10px;
+  color: black;
+}
+
+.nav:active {
+  color: white;
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+.nav::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin-bottom: -2px;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.nav:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
