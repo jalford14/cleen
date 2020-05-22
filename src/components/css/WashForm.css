@@ -19,7 +19,6 @@
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1;
-  text-transform: capitalize;
   width: 100%;
   display: block;
   margin: 0 0 .625em 1.5625em;
@@ -54,7 +53,7 @@
   align-items: center;
 }
 
-.wash-form input {
+.wash-form .form-input, .form-submit {
   margin: 10px;
   height: 3.5em;
   width: 100%;
@@ -72,4 +71,22 @@
 
 input:focus, textarea:focus {
   outline: none;
+}
+
+.form-submit {
+  width: 25%;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  border: solid #16345f 2px;
+  text-align: center;
+  padding: 0;
+  margin: 2.5em 0 2.5em 0;
+  transition: all ease-in-out .2s;
+}
+
+.form-submit:hover {
+  cursor: pointer;
+  background-color: #16345f;
+  color: white;
 }

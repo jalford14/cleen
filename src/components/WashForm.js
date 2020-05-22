@@ -7,19 +7,26 @@ class WashForm extends React.Component {
     return (
       <div class="form-container">
         <p class="form-header">Contact Us</p>
+
         <form class="wash-form">
           <label class="form-control" />
             <span class="form-label">Name *</span>
-              <input type="text" />
+              <input class="form-input" type="text" />
+      
           <label class="form-control" />
             <span class="form-label">Email *</span>
-              <input type="text" />
+              <input class="form-input" type="text" />
+
           <label class="form-control" />
             <span class="form-label">Phone</span>
-              <input type="text" />
+              <input class="form-input" type="text" />
+
           <label class="form-control" />
-            <span class="form-label">Notes</span>
+            <span class="form-label">Additional Notes</span>
               <textarea class="form-textarea" />
+
+          <input class="form-submit" type="submit" value="Submit" />
+
         </form>
       </div>
     );
