@@ -6,10 +6,10 @@ class Header extends React.Component {
   render() {
     return (
       <div class="navbar">
-        <Link to="/" class="home">Cleen</Link>
+        <Link to="/" class="home">CLEEN</Link>
 
         <Link to="/about" class="nav push">About</Link>
-        <Link to="/basic" class="nav">Get Started!</Link>
+        <Link to="/basic" class="nav">Get Started</Link>
       </div>
     );
   }

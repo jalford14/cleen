@@ -3,6 +3,12 @@
   display: flex;
 }
 
+.home {
+  font-family: Barlow;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
 .push {
   margin-left: auto;
 }

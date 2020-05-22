@@ -1,6 +1,13 @@
+.form-header {
+  font-size: 3.5em;
+  text-align: center;
+  margin: 5% 0 0 0; 
+}
+
 .form-container {
   width: 50%;
   margin: 0 auto;
+  font-family: Barlow, Arial, sans-serif;
 }
 
 .form-control {
@@ -12,7 +19,6 @@
   font-size: 1.1em;
   font-weight: 700;
   line-height: 1;
-  font-family: Barlow, Arial, sans-serif;
   text-transform: capitalize;
   width: 100%;
   display: block;
@@ -30,7 +36,6 @@
   color: #16345f;
   border-radius: 1em;
   background-color: rgba(22,52,95,0.2);
-  font-family: Barlow, Arial, sans-serif;
   font-size: 1.1em;
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
@@ -59,7 +64,6 @@
   color: #16345f;
   border-radius: 1em;
   background-color: rgba(22,52,95,0.2);
-  font-family: Barlow, Arial, sans-serif;
   font-size: 1.1em;
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;

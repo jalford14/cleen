@@ -6,7 +6,7 @@ class WashForm extends React.Component {
   render() {
     return (
       <div class="form-container">
-        <h1>Contact Us</h1>
+        <p class="form-header">Contact Us</p>
         <form class="wash-form">
           <label class="form-control" />
             <span class="form-label">Name *</span>
