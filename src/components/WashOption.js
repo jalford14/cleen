@@ -15,9 +15,11 @@ class WashOption extends React.Component {
       // we'll wash for you!
 
       <div class="content-box">
-        <h1>{this.props.price}</h1>
-        <h2>{this.props.title}</h2>
-        <h3>{this.props.description}</h3>
+        <a href="localhost:3000">
+          <h1>{this.props.price}</h1>
+          <h2>{this.props.title}</h2>
+          <h3>{this.props.description}</h3>
+        </a>
       </div>
     );
   }
