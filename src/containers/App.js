@@ -20,7 +20,7 @@ function App() {
         <WashOption
           price="$15"
           title="Interior Detailing"
-          description="Add this to any wash and we'll "
+          description="Our team will vacuum and detail your car."
         />
         <WashOption
           price="$20"
