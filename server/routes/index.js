@@ -22,11 +22,12 @@ transporter.verify((error, success) => {
 });
 
 router.post("/send", (req, res, next) => {
+  var type = req.body.type
   var name = req.body.name
   var email = req.body.email
   var phone = req.body.phone
   var notes = req.body.notes
-  var content = `name: ${name} \n email: ${email} \n phone: ${phone} \n notes: ${notes}`
+  var content = `type: ${type} \n name: ${name} \n email: ${email} \n phone: ${phone} \n notes: ${notes}`
 
   var mail = {
     from: name,
