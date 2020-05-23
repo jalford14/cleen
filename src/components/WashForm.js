@@ -6,15 +6,18 @@ class WashForm extends React.Component {
   constructor() {
     super();
     this.state = {
-      selectColor: "rgba(22,52,95,0.2)",
+      dropdownColor: "rgba(22,52,95,0.2)",
     };
   }
 
   componentDidMount() {
     const { initialColor } = this.props.location.state
-    console.log(initialColor)
 
-    this.setState({selectColor: initialColor});
+    this.setState({dropdownColor: initialColor});
+  }
+
+  selectedTitle() {
+    return this.props.location.state.initialWashOption;
   }
 
   updateColor() {
@@ -25,16 +28,16 @@ class WashForm extends React.Component {
   chooseColor(value) {
     switch(value) {
       case "basic":
-        this.setState({selectColor: "#6AE6C9"});
+        this.setState({dropdownColor: "#6AE6C9"});
         break;
       case "pro":
-        this.setState({selectColor: "#75C2E6"});
+        this.setState({dropdownColor: "#75C2E6"});
         break;
       case "interior":
-        this.setState({selectColor: "#FA8C9C"});
+        this.setState({dropdownColor: "#FA8C9C"});
         break;
       case "full-works":
-        this.setState({selectColor: "#FAB05A"});
+        this.setState({dropdownColor: "#FAB05A"});
         break;
     }
   }
@@ -80,12 +83,12 @@ class WashForm extends React.Component {
             <span class="form-label">Type of Wash *</span>
               <select class="form-dropdown" id="type" 
                       onChange={this.updateColor.bind(this)} 
-                      style={{backgroundColor: this.state.selectColor}}
+                      style={{backgroundColor: this.state.dropdownColor}}
               >
-                <option value="basic">Basic Wash</option>
-                <option value="pro">On-Demand Wash</option>
-                <option value="interior">Interior Detailing</option>
-                <option value="full-works">The Full Works</option>
+                <option value="basic" selected={this.selectedTitle() == "basic" && "selected"}>Basic Wash</option>
+                <option value="pro" selected={this.selectedTitle() == "pro" && "selected"}>On-Demand Wash</option>
+                <option value="interior" selected={this.selectedTitle() == "interior" && "selected"}>Interior Detailing</option>
+                <option value="full-works" selected={this.selectedTitle() == "full-works" && "selected"}>The Full Works</option>
               </select>
 
           <label class="form-control" />
