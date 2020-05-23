@@ -7,7 +7,12 @@ class WashOption extends React.Component {
   render() {
     return (
       <div class="content-box" style={{background: this.props.color}}>
-        <Link to="/basic">
+        <Link
+          to={{
+            pathname: "/form",
+            state: {initialColor: this.props.color}
+          }}
+        >
           <p class="price">{this.props.price}</p>
           <p class="title">{this.props.title}</p>
           <p class="description">{this.props.description}</p>

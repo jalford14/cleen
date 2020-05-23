@@ -13,7 +13,7 @@ ReactDOM.render(
       <Header />
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/basic" component={WashForm} />
+        <Route exact path="/form" component={WashForm} />
         <Route exact path="/about" component={WashForm} />
       </Switch>
     </BrowserRouter>

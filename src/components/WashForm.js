@@ -11,7 +11,10 @@ class WashForm extends React.Component {
   }
 
   componentDidMount() {
-    this.updateColor();
+    const { initialColor } = this.props.location.state
+    console.log(initialColor)
+
+    this.setState({selectColor: initialColor});
   }
 
   updateColor() {
@@ -75,7 +78,10 @@ class WashForm extends React.Component {
         <form class="wash-form" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <label class="form-control" />
             <span class="form-label">Type of Wash *</span>
-              <select class="form-dropdown" id="type" onChange={this.updateColor.bind(this)} style={{backgroundColor: this.state.selectColor}}>
+              <select class="form-dropdown" id="type" 
+                      onChange={this.updateColor.bind(this)} 
+                      style={{backgroundColor: this.state.selectColor}}
+              >
                 <option value="basic">Basic Wash</option>
                 <option value="pro">On-Demand Wash</option>
                 <option value="interior">Interior Detailing</option>
@@ -97,7 +103,7 @@ class WashForm extends React.Component {
           <label class="form-control" />
             <span class="form-label">Additional Notes</span>
               <textarea class="form-textarea" id="notes" 
-                placeholder="Want a second car cleaned? Anything important to know? Let us know here!"
+                placeholder="Anything important to know? Want a second car cleaned? Let us know here!"
               />
 
           <input class="form-submit" type="submit" value="Submit" />
