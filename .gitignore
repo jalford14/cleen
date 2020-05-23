@@ -13,7 +13,7 @@
 
 # misc
 .DS_Store
-config/config.js
+/server/config/config.js
 
 npm-debug.log*
 yarn-debug.log*
