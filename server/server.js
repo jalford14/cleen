@@ -1,6 +1,6 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-var index = require('./routes/index');
+const express = require("express");
+const bodyParser = require("body-parser");
+var index = require("./routes/index");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -14,6 +14,6 @@ app.use(function (req, res, next) {
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/', index);
+app.use("/", index);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

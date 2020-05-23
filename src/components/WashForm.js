@@ -41,11 +41,11 @@ class WashForm extends React.Component {
         <form class="wash-form" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <label class="form-control" />
             <span class="form-label">Name *</span>
-              <input class="form-input" id="name" type="text" />
+              <input class="form-input" id="name" type="text" required/>
       
           <label class="form-control" />
             <span class="form-label">Email *</span>
-              <input class="form-input" id="email" type="text" />
+              <input class="form-input" id="email" type="text" required/>
 
           <label class="form-control" />
             <span class="form-label">Phone</span>

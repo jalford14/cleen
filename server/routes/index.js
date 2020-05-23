@@ -26,12 +26,12 @@ router.post("/send", (req, res, next) => {
   var email = req.body.email
   var phone = req.body.phone
   var notes = req.body.notes
-  var content = `name: ${name} \n email: ${email} \n phone: ${phone} \n notes: ${content} `
+  var content = `name: ${name} \n email: ${email} \n phone: ${phone} \n notes: ${notes}`
 
   var mail = {
     from: name,
     to: creds.EMAIL_ADDRESS,
-    subject: "New Message from Contact Form",
+    subject: "New Cleen Deal!",
     text: content
   }
 
