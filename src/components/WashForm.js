@@ -29,12 +29,16 @@ class WashForm extends React.Component {
         })
     }
 
+  resetForm(){
+        document.getElementById("contact-form").reset();
+    }
+
   render() {
     return (
       <div class="form-container">
         <p class="form-header">Contact Us</p>
 
-        <form class="wash-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+        <form class="wash-form" id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
           <label class="form-control" />
             <span class="form-label">Name *</span>
               <input class="form-input" id="name" type="text" />
