@@ -1,13 +1,12 @@
 var express = require("express");
 var router = express.Router();
 var nodemailer = require("nodemailer");
-const creds = require("../config/config");
 
 var transport = {
   host: "smtp.gmail.com",
   auth: {
-    user: creds.EMAIL_ADDRESS,
-    pass: creds.EMAIL_PASSWORD
+    user: process.env.EMAIL_ADDRESS,
+    pass: process.env.EMAIL_PASSWORD
   }
 }
 
@@ -31,7 +30,7 @@ router.post("/send", (req, res, next) => {
 
   var mail = {
     from: name,
-    to: creds.EMAIL_ADDRESS,
+    to: process.env.EMAIL_ADDRESS,
     subject: "New Cleen Deal!",
     text: content
   }
