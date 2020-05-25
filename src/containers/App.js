@@ -1,6 +1,6 @@
-import React from 'react';
-import WashOption from '../components/WashOption.js'
-import './App.css';
+import React from "react";
+import WashOption from "../components/WashOption.js"
+import "./App.css";
 
 function App() {
   return (
