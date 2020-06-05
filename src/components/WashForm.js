@@ -17,7 +17,8 @@ class WashForm extends React.Component {
   }
 
   selectedTitle() {
-    return this.props.location.state.initialWashOption;
+    return "basic";
+
   }
 
   updateColor() {
@@ -38,6 +39,9 @@ class WashForm extends React.Component {
         break;
       case "full-works":
         this.setState({dropdownColor: "#FAB05A"});
+        break;
+      default:
+        this.setState({dropdownColor: "#6AE6C9"});
         break;
     }
   }
@@ -85,10 +89,10 @@ class WashForm extends React.Component {
                       onChange={this.updateColor.bind(this)} 
                       style={{backgroundColor: this.state.dropdownColor}}
               >
-                <option value="basic" selected={this.selectedTitle() == "basic" && "selected"}>Basic Wash</option>
-                <option value="pro" selected={this.selectedTitle() == "pro" && "selected"}>On-Demand Wash</option>
-                <option value="interior" selected={this.selectedTitle() == "interior" && "selected"}>Interior Detailing</option>
-                <option value="full-works" selected={this.selectedTitle() == "full-works" && "selected"}>The Full Works</option>
+                <option value="basic" selected={this.selectedTitle() === "basic" && "selected"}>Basic Wash</option>
+                <option value="pro" selected={this.selectedTitle() === "pro" && "selected"}>On-Demand Wash</option>
+                <option value="interior" selected={this.selectedTitle() === "interior" && "selected"}>Interior Detailing</option>
+                <option value="full-works" selected={this.selectedTitle() === "full-works" && "selected"}>The Full Works</option>
               </select>
 
           <label class="form-control" />

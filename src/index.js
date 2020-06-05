@@ -5,13 +5,13 @@ import { Switch, Route, BrowserRouter } from "react-router-dom";
 import App from "./containers/App";
 import WashForm from "./components/WashForm";
 import Header from "./components/Header";
-import About from "./components/About";
+import About from "./containers/About";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
+      <Header/>
       <Switch>
         <Route exact path="/" component={App} />
         <Route exact path="/form" component={WashForm} />
@@ -22,7 +22,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

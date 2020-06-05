@@ -1,23 +1,20 @@
 import React from 'react';
 import './css/WashOption.css'
-import WashForm from './WashForm'
-import { Link, Switch, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class WashOption extends React.Component {
   getTitle(title) {
     switch(title) {
       case "Basic Wash":
         return "basic";
-        break;
       case "On-Demand Wash":
         return "pro";
-        break;
       case "Interior Detailing":
         return "interior";
-        break;
       case "The Full Works":
         return "full-works";
-        break;
+      default:
+        return "basic";
     }
   }
 
