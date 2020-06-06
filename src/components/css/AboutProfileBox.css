@@ -1,0 +1,28 @@
+.profile-box {
+  margin-bottom: 5%;
+  padding: 5%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-container {
+  text-align: center;
+}
+
+.img-container img {
+  width: 17em;
+  height: 17em;
+  border-radius: 50%;
+}
+
+.person-container div {
+  margin: 2% 0 2% 0;
+}
+
+.person-name {
+  font-size: 2.76em;
+  text-align: center;
+}
+
+.person-description {
+  font-size: 1.6em;
+}
