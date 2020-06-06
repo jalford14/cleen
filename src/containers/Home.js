@@ -1,11 +1,11 @@
 import React from "react";
 import WashOption from "../components/WashOption.js"
-import "./App.css";
+import "./Home.css";
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="Home">
+      <header className="Home-header">
         <WashOption
           color="#6AE6C9"
           price="$10"
@@ -35,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

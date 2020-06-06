@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
-import App from "./containers/App";
+import Home from "./containers/Home";
 import WashForm from "./components/WashForm";
 import Header from "./components/Header";
 import About from "./containers/About";
@@ -13,7 +13,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Header/>
       <Switch>
-        <Route exact path="/" component={App} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/form" component={WashForm} />
         <Route exact path="/about" component={About} />
       </Switch>
