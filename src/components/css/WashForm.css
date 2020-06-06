@@ -1,13 +1,13 @@
-.form-header {
-  font-size: 3.5em;
-  text-align: center;
-  margin: 5% 0 0 0; 
-}
-
 .form-container {
   width: 50%;
   margin: 0 auto;
   font-family: Barlow, Arial, sans-serif;
+}
+
+.form-header {
+  font-size: 3.5em;
+  text-align: center;
+  margin: 5% 0 5% 0; 
 }
 
 .form-control {
