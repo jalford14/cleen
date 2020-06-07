@@ -1,10 +1,19 @@
 .navbar {
   padding: 25px;
-  display: flex
+  display: flex;
+  border-color: #6AE6C9;
+  font-family: Barlow;
+}
+
+.navbar-border {
+  height: 5px;
+  min-width: 100%;
+  background: rgb(106,230,201);
+  background: linear-gradient(90deg, rgba(106,230,201,1) 0%, rgba(117,194,230,1) 45%, rgba(250,140,156,1) 100%);
+  margin-bottom: 5vh;
 }
 
 .home-icon {
-  font-family: Barlow;
   letter-spacing: 4px;
   font-weight: 500;
 }
