@@ -11,14 +11,20 @@ class WashForm extends React.Component {
   }
 
   componentDidMount() {
-    const { initialColor } = this.props.location.state
+    if (this.props.location.state !== undefined) {
+      const { initialColor } = this.props.location.state
 
-    this.setState({dropdownColor: initialColor});
+      this.setState({dropdownColor: initialColor});
+    }
   }
 
   selectedTitle() {
-    return "basic";
-
+    if (this.props.location.state === undefined) {
+      return "default"
+    }
+    else {
+      return this.props.location.state.initialWashOption;
+    }
   }
 
   updateColor() {
@@ -41,7 +47,7 @@ class WashForm extends React.Component {
         this.setState({dropdownColor: "#FAB05A"});
         break;
       default:
-        this.setState({dropdownColor: "#6AE6C9"});
+        this.setState({dropdownColor: "rgba(22,52,95,0.2)"});
         break;
     }
   }
@@ -88,7 +94,9 @@ class WashForm extends React.Component {
               <select class="form-dropdown" id="type" 
                       onChange={this.updateColor.bind(this)} 
                       style={{backgroundColor: this.state.dropdownColor}}
+                      required
               >
+                <option value="" selected={this.selectedTitle() === "default" && "selected"}>Choose your wash...</option>
                 <option value="basic" selected={this.selectedTitle() === "basic" && "selected"}>Basic Wash</option>
                 <option value="pro" selected={this.selectedTitle() === "pro" && "selected"}>On-Demand Wash</option>
                 <option value="interior" selected={this.selectedTitle() === "interior" && "selected"}>Interior Detailing</option>
