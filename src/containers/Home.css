@@ -1,13 +1,24 @@
-.Home {
+.home-page {
   text-align: center;
 }
 
-.Home-header {
-  min-height: 100vh;
+.home-title {
+  font-family: Barlow;
+  font-size: 5.34em;
+  margin-bottom: 5%;
+}
+
+.home-header {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+@media screen and (max-width: 812px) {
+  .home-header {
+    flex-flow: column nowrap;
+  }
 }

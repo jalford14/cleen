@@ -1,9 +1,9 @@
 .navbar {
   padding: 25px;
-  display: flex;
+  display: flex
 }
 
-.home {
+.home-icon {
   font-family: Barlow;
   letter-spacing: 4px;
   font-weight: 500;

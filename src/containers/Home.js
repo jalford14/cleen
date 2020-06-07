@@ -4,8 +4,9 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div className="Home">
-      <header className="Home-header">
+    <div class="home-page">
+      <div class="home-title">Wash Options</div>
+      <header class="home-header">
         <WashOption
           color="#6AE6C9"
           price="$10"
