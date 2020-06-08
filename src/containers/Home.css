@@ -18,6 +18,10 @@
 }
 
 @media screen and (max-width: 812px) {
+  .home-title {
+    font-size: 3.3em;
+  }
+
   .home-header {
     flex-flow: column nowrap;
   }

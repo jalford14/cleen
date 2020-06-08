@@ -45,6 +45,7 @@
     min-height: 10px;
     max-height: 275px;
     margin: 3vh;
+    padding-bottom: 3%;
   }
 
   .price {
