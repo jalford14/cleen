@@ -42,19 +42,21 @@
 @media screen and (max-width: 812px) {
   .content-box {
     width: 75%;
-    height: 10%;
-    margin: 5vh;
+    min-height: 10px;
+    max-height: 275px;
+    margin: 3vh;
   }
 
   .price {
     font-size: 4.24em;
-    margin: 20px 0 0 0;
+    margin: 0%;
+    margin-bottom: 2%;
     font-weight: 100;
   }
 
   .title {
     font-size: 2.1em;
-    margin-top: 5%;
+    margin: 0%;
   }
 
   .description {
