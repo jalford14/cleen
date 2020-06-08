@@ -10,7 +10,6 @@ class Header extends React.Component {
           <Link to="/" class="home-icon">CLEEN</Link>
 
           <Link to="/about" class="nav push">About</Link>
-          <Link to="/form" class="nav">Get Started</Link>
         </div>
         <div class="navbar-border"></div>
       </div>
