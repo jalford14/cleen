@@ -4,7 +4,7 @@
   width: 20%;
   margin: 0 10px 0 10px;
   padding: 15px;
-  min-height: 350px;
+  height: 400px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #282c34;
   position: relative;
@@ -25,7 +25,7 @@
 }
 
 .price {
-  font-size: 2.24em;
+  font-size: 2.84em;
   margin: 20px 0 0 0;
   font-weight: 100;
 }
