@@ -6,7 +6,7 @@ class AboutProfileBox extends React.Component {
     return(
       <div class="profile-box" style={{background: this.props.color}}>
         <div class="img-container">
-          <img src={this.props.picture} />
+          <img src={this.props.picture} alt="Picture of Cleen employee"/>
         </div>
         <div class="person-container">
           <div class="person-name">
